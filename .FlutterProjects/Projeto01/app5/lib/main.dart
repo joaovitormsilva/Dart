@@ -20,13 +20,13 @@ class _MyAppState extends State<MyApp> {
 
   void aumentasalario(int valor) {
     setState(() {
-      this.salario += valor;
+      salario += valor;
     });
   }
 
   void diminuisalario(int valor) {
     setState(() {
-      this.salario -= valor;
+      salario -= valor;
     });
   }
 
@@ -35,13 +35,15 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+          leading: const Icon(Icons.menu),
           title: const Text(
             /*
                para usar um valor do widget é preciso usar o:
                'widget.variavel'
             */
-            'Page inicial',
+            'Page inicial', 
           ),
+          backgroundColor: Colors.purple,
         ),
         body: Center(
           // detector de gestos
@@ -63,7 +65,7 @@ class _MyAppState extends State<MyApp> {
               aumentasalario(100);
             },
             onDoubleTap: () {
-              diminuisalario(100);
+              diminuisalario(200);
             },
             child: Text(
               "Quanto deve ${widget.nome} para o café: $salario",
