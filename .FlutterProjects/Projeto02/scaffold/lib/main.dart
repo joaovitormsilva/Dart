@@ -15,13 +15,40 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-      appBar: AppBar(
-        title: const Text('Aplicativo exemplo Scaffold'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Aplicativo exemplo Scaffold'),
+        ),
+
+        // mesma linha
+        // alinhamento: main axis - horizontal
+        // cross axis - vertical
+
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          //crossAxisAlignment: CrossAxisAlignment.end,
+          children: const [
+            Center(
+              child: Text(
+                'linha 1',
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
+            Center(
+              child: Text(
+                'linha 2',
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
+            Center(
+              child: Text(
+                'linha 3',
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
+          ],
+        ),
       ),
-      body: const Center(
-        child: Text('Meu aplicativo'),
-      ),
-    ));
+    );
   }
 }
