@@ -3,7 +3,7 @@ sua capacidade de desenvolvimento mobile híbrido (Android e IOS).
 Dessa forma, esse repositório foi separado em algumas grandes partes:
 
 # Estudos em Dart:
-	O Flutter utiliza a linguagem Dart para a codificação das aplicações, dessa forma, a primeira parte é focada em seu aprendizado:
+O Flutter utiliza a linguagem Dart para a codificação das aplicações, dessa forma, a primeira parte é focada em seu aprendizado:
 	- Classes
 	- Condições
 	- Conversão
