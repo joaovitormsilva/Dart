@@ -16,3 +16,10 @@ O Flutter utiliza a linguagem Dart para a codificação das aplicações, dessa 
 - Variáveis
 	
 # Estudos de Flutter
+
+# Livros
+Nessa parte será encontrado todos os livros que eu utilizo para estudar o SDK, além de livros com focos diferentes.
+# Experimentos
+Por último, aqui ficará alguns projetos experimentais que criarei enquanto aprendo novos widgets e outras funcionalidades.
+# Projetos Oficiais 
+Aqui será encontrado todos os projetos oficiais que criei com Flutter 
