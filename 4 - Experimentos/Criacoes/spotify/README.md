@@ -1,17 +1,14 @@
-# spotify
+#Spotify
 
-Criação de uma versão do Spotify
+Este projeto é a criação de uma versão do Spotify, ainda está em desenvolvimento e não está funcional. Meu objetivo é implementar a API do Spotify para tornar o aplicativo operacional. A interface já foi construída por mim, e agora estou buscando meios de integrar a API.
 
-## Getting Started
+Com este projeto, estou desafiando minhas habilidades em Flutter e aprendendo muito no processo. Encontrei diversas dificuldades e já refatorei o código várias vezes. Se você perceber algum erro ou falha, por favor, me informe. Você pode entrar em contato comigo pelo número: +55 34 998152289.
 
-Esse projeto é a criação de uma versão do Spotify (INACABADO), desejo realizar a implementação da API do SPotify para tornar funcional o aplicativo. Toda a parte da Interface foi construida por mim e atualmente procuro meios para implentar a API.
-Com esse projeto, eu me coloquei em um desafio para testar meus conhecimentos em Flutter e buscar novos - não foram poucos, encontrei diversas dificuldades e já refatorei esse código mais vezes do que tomei café. Se perceber algum bug/falha me envie :)
-Meu número é: 34 998152289
+Para executar este aplicativo, siga os seguintes passos:
 
-Para rodar esse aplicativo: 
-	- tenha o VS Code/Android Studio instalado no seu computador, é preciso instalar as extensões: Flutter e Dart. No Android Studio precisa instalar o plugin do Flutter.
-	- Conecte seu celular ao computador e permita a instalação de APPS de terceiros, caminho: Configurações -> Segurança -> Fontes Desconhecidas.
-	- Permita transição de dados no telefone, certifique-se que o VS Code/Android Studio esteja com o telefone reconhecido.
-	- Rode o app.
-	
-E é isso, aproveite sua passagem nesse git. Adeus!
+    Certifique-se de que o VS Code/Android Studio esteja instalado em seu computador e as extensões Flutter e Dart também estejam instaladas. No Android Studio, é necessário instalar o plugin do Flutter.
+    Conecte seu celular ao computador e permita a instalação de aplicativos de terceiros. Para isso, acesse Configurações -> Segurança -> Fontes Desconhecidas.
+    Permita a transferência de dados em seu telefone e verifique se o VS Code/Android Studio reconhece seu dispositivo.
+    Execute o aplicativo.
+
+Agradeço pela sua visita neste git. Até logo!
