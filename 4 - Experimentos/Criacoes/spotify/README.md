@@ -2,7 +2,7 @@
 
 Este projeto é a criação de uma versão do Spotify, ainda está em desenvolvimento e não está funcional. Meu objetivo é implementar a API do Spotify para tornar o aplicativo operacional. A interface já foi construída por mim, e agora estou buscando meios de integrar a API.
 
-Com este projeto, estou desafiando minhas habilidades em Flutter e aprendendo muito no processo. Encontrei diversas dificuldades e já refatorei o código várias vezes. Se você perceber algum erro ou falha, por favor, me informe. Você pode entrar em contato comigo pelo número: +55 34 998152289.
+Com este projeto, estou desafiando minhas habilidades em Flutter e aprendendo muito no processo. Encontrei diversas dificuldades e já refatorei o código várias vezes. Se você perceber algum erro ou falha, por favor, me informe: joao.vitormsilva@usp.br
 
 Para executar este aplicativo, siga os seguintes passos:
 
