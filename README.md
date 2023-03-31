@@ -21,5 +21,6 @@ O Flutter utiliza a linguagem Dart para a codificação das aplicações, dessa 
 Nessa parte será encontrado todos os livros que eu utilizo para estudar o SDK, além de livros com focos diferentes.
 # Experimentos
 Por último, aqui ficará alguns projetos experimentais que criarei enquanto aprendo novos widgets e outras funcionalidades.
+- Spotify: Criação de uma versão do Spotify em Flutter para teste dos meus conhecimentos.
 # Projetos Oficiais 
 Aqui será encontrado todos os projetos oficiais que criei com Flutter 
