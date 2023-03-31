@@ -1,4 +1,4 @@
-#Spotify
+# Spotify
 
 Este projeto é a criação de uma versão do Spotify, ainda está em desenvolvimento e não está funcional. Meu objetivo é implementar a API do Spotify para tornar o aplicativo operacional. A interface já foi construída por mim, e agora estou buscando meios de integrar a API.
 
