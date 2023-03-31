@@ -1,3 +1,6 @@
+import 'dart:developer';
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,14 +15,46 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String valor = '0';
+  String valor = '';
 
-  void mudarnumero(String valor, int digito) {
-    String aux = digito.toString();
-    setState(() {
-      valor = valor + aux;
-      print(valor);
-    });
+  void mudarnumero(String tecla) {
+    switch (tecla) {
+      case '0':
+      case '1':
+      case '2':
+      case '3':
+      case '4':
+      case '5':
+      case '6':
+      case '7':
+      case '8':
+      case '9':
+        setState(() {
+          valor += tecla;
+        });
+        break;
+      case 'AC':
+        setState(() {
+          valor = '';
+        });
+        break;
+      case '+':
+      case '-':
+      case '*':
+      case '/':
+      default:
+        break;
+    }
+  }
+
+  Int calcular(String operacao, Int valor) {
+    switch (operacao) {
+      case '+':
+      case '-':
+      case '*':
+      case '/':
+    }
+    return valor;
   }
 
   @override
@@ -27,114 +62,211 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Center( child:Text("Calculadora"),
-        ),),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-        
+          title: const Text("Calculadora"),
+        ),
+        body:
+            Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      valor,
+                      style: TextStyle(fontSize: 40),
+                    ),
+                  ],
+                ),
                 height: 300,
               ),
             ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const [
-              Text(
-                'AC',
-                style: TextStyle(fontSize: 40),
+            children: [
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('AC');
+                },
+                child: const Text(
+                  'AC',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
-              Text(
-                'X',
-                style: TextStyle(fontSize: 40),
-              ),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const [
-              Text(
-                '7',
-                style: TextStyle(fontSize: 40),
-              ),
-              Text(
-                '8',
-                style: TextStyle(fontSize: 40),
-              ),
-              Text(
-                '9',
-                style: TextStyle(fontSize: 40),
-              ),
-              Text(
-                '/',
-                style: TextStyle(fontSize: 40),
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('*');
+                },
+                child: const Text(
+                  'X',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
             ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const [
-              Text(
-                '4',
-                style: TextStyle(fontSize: 40),
+            children: [
+              GestureDetector(
+                onTap: () {
+                  mudarnumero("7");
+                },
+                child: const Text(
+                  '7',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
-              Text(
-                '5',
-                style: TextStyle(fontSize: 40),
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('8');
+                },
+                child: const Text(
+                  '8',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
-              Text(
-                '6',
-                style: TextStyle(fontSize: 40),
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('9');
+                },
+                child: const Text(
+                  '9',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
-              Text(
-                '*',
-                style: TextStyle(fontSize: 40),
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('/');
+                },
+                child: const Text(
+                  '/',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
             ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const [
-              Text(
-                '1',
-                style: TextStyle(fontSize: 40),
+            children: [
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('4');
+                },
+                child: const Text(
+                  '4',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
-              Text(
-                '2',
-                style: TextStyle(fontSize: 40),
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('5');
+                },
+                child: const Text(
+                  '5',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
-              Text(
-                '3',
-                style: TextStyle(fontSize: 40),
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('6');
+                },
+                child: const Text(
+                  '6',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
-              Text(
-                '-',
-                style: TextStyle(fontSize: 40),
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('*');
+                },
+                child: const Text(
+                  '*',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
             ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const [
-              Text(
-                '0',
-                style: TextStyle(fontSize: 40),
+            children: [
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('1');
+                },
+                child: const Text(
+                  '1',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
-              Text(
-                ',',
-                style: TextStyle(fontSize: 40),
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('2');
+                },
+                child: const Text(
+                  '2',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
-              Text(
-                '=',
-                style: TextStyle(fontSize: 40),
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('3');
+                },
+                child: const Text(
+                  '3',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
-              Text(
-                '+',
-                style: TextStyle(fontSize: 40),
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('0');
+                },
+                child: const Text(
+                  '-',
+                  style: TextStyle(fontSize: 40),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('0');
+                },
+                child: const Text(
+                  '0',
+                  style: TextStyle(fontSize: 40),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  mudarnumero(',');
+                },
+                child: const Text(
+                  ',',
+                  style: TextStyle(fontSize: 40),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('=');
+                },
+                child: const Text(
+                  '=',
+                  style: TextStyle(fontSize: 40),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  mudarnumero('+');
+                },
+                child: const Text(
+                  '+',
+                  style: TextStyle(fontSize: 40),
+                ),
               ),
             ],
           ),

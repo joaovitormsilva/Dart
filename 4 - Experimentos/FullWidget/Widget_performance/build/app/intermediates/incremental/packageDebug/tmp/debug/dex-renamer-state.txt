@@ -1,0 +1,4 @@
+#Mon Feb 06 10:03:53 BRT 2023
+base.0=/home/joaov/Documents/Estudos/Flutter Studies/4 - Experimentos/FullWidget/Widget_performance/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
