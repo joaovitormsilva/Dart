@@ -6,9 +6,9 @@ Com este projeto, estou desafiando minhas habilidades em Flutter e aprendendo mu
 
 Para executar este aplicativo, siga os seguintes passos:
 
-    Certifique-se de que o VS Code/Android Studio esteja instalado em seu computador e as extensões Flutter e Dart também estejam instaladas. No Android Studio, é necessário instalar o plugin do Flutter.
-    Conecte seu celular ao computador e permita a instalação de aplicativos de terceiros. Para isso, acesse Configurações -> Segurança -> Fontes Desconhecidas.
-    Permita a transferência de dados em seu telefone e verifique se o VS Code/Android Studio reconhece seu dispositivo.
-    Execute o aplicativo.
+- Certifique-se de que o VS Code/Android Studio esteja instalado em seu computador e as extensões Flutter e Dart também estejam instaladas. No Android Studio, é necessário instalar o plugin do Flutter.
+- Conecte seu celular ao computador e permita a instalação de aplicativos de terceiros. Para isso, acesse Configurações -> Segurança -> Fontes Desconhecidas.
+- Permita a transferência de dados em seu telefone e verifique se o VS Code/Android Studio reconhece seu dispositivo.
+- Execute o aplicativo.
 
 Agradeço pela sua visita neste git. Até logo!
