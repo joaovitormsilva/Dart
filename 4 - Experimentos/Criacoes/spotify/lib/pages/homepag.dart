@@ -329,6 +329,7 @@ class MaisVistosWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     Map<String, List<String>> albumsMusicas = {
       'Ride The Lightning': ['rideMusic', '1'],
       "Load": ['rideMusic', '2'],
@@ -338,6 +339,16 @@ class MaisVistosWidget extends StatelessWidget {
       "The Black ": ['rideMusic', '6'],
     };
     List<String> albumsName = albumsMusicas.keys.toList();
+=======
+    List<String> albums = [
+      "Ride The Lightning",
+      "Load",
+      "Master of Puppets",
+      "The Black Album",
+      "Master of Puppets",
+      "The Black Album",
+    ];
+>>>>>>> 24c6041a03a1fb1a3d5ab926ec61075c00ede5ae
     List<String> images = [
       "https://upload.wikimedia.org/wikipedia/pt/f/fc/Ride_the_Lightning.jpg",
       "https://upload.wikimedia.org/wikipedia/pt/thumb/3/32/Load.jpg/220px-Load.jpg",
@@ -363,18 +374,27 @@ class MaisVistosWidget extends StatelessWidget {
           mainAxisSpacing: 10, // Espaçamento vertical entre os containers
           childAspectRatio: 2.5,
         ),
+<<<<<<< HEAD
         itemCount: albumsName.length,
+=======
+        itemCount: albums.length,
+>>>>>>> 24c6041a03a1fb1a3d5ab926ec61075c00ede5ae
         itemBuilder: (BuildContext context, int index) {
           return GestureDetector(
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
+<<<<<<< HEAD
                       builder: (context) => DetalhesAlbum(
                             albumMusics: albumsMusicas[albumsName[index]]!,
                             albumName: albumsName[index],
                             image: images[index],
                           )),
+=======
+                      builder: (context) =>
+                          DetalhesAlbum(album: albums[index], image: images[index],)),
+>>>>>>> 24c6041a03a1fb1a3d5ab926ec61075c00ede5ae
                 );
               },
               child: Padding(
@@ -398,7 +418,11 @@ class MaisVistosWidget extends StatelessWidget {
                       const Padding(padding: EdgeInsets.only(left: 8)),
                       Flexible(
                         child: Text(
+<<<<<<< HEAD
                           albumsName[index],
+=======
+                          albums[index],
+>>>>>>> 24c6041a03a1fb1a3d5ab926ec61075c00ede5ae
                           overflow: TextOverflow.clip,
                           style: const TextStyle(
                             color: Colors.white,
